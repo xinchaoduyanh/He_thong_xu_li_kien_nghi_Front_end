@@ -6,8 +6,9 @@ interface Props {
   disabled?: boolean
   small?: boolean
   icon?: IconType
+  sizeIcon?: number
 }
-export default function Button({ label, onClick, outline, disabled, small, icon }: Props) {
+export default function Button({ label, onClick, outline, disabled, small, icon, sizeIcon }: Props) {
   return (
     <button
       onClick={onClick}
@@ -17,7 +18,7 @@ export default function Button({ label, onClick, outline, disabled, small, icon 
       ${small ? `py-1 text-sm font-light border-[1px]` : `py-3 text-md font-semibold border-2`} 
       `}
     >
-      {icon && <div className='absolute left-4 top-1/2 transform -translate-y-1/2'>{icon({ size: 18 })} </div>}
+      {icon && <div className='absolute left-4 top-1/2 transform -translate-y-1/2'>{icon({ size: sizeIcon || 18 })} </div>}
       {label}
     </button>
   )

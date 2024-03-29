@@ -24,7 +24,7 @@ const Register: React.FC = () => {
       <div className='h-1/3 bg-cover'>
         <img src={img} alt='anh' className='' />
       </div>
-      <div className='h-2/3 flex justify-center items-center bg-pink-300 '>
+      <div className='h-2/3 flex justify-center items-center bg-gray-500 '>
         <form onSubmit={handleSubmit(onSubmit)} className='w-1/3 rounded-lg shadow-lg bg-white p-8 '>
           <div className='text-2xl font-bold '>Đăng kí</div>
           <Input
@@ -37,9 +37,9 @@ const Register: React.FC = () => {
           />
           <Button label='Đăng ký với số điện thoại' onClick={() => {}} />
           <div className='border-t border-gray-300 my-4'>
-            <span className='text-gray-500'>Hoặc</span>
+            <center className='text-gray-700'>Hoặc</center>
           </div>
-          <Button outline label='Tiếp tục với tài khoản Google' icon={FcGoogle} onClick={() => {}} />
+          <Button sizeIcon={30} outline label='Tiếp tục với tài khoản Google' icon={FcGoogle} onClick={() => {}} />
         </form>
       </div>
     </div>
