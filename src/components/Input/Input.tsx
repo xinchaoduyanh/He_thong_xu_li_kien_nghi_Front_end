@@ -70,7 +70,7 @@ export default function Input({
           />
         </svg>
       )}
-      <div className={ClassNameError}>{errorMessage}</div>
+      {/* <div className={ClassNameError}>{errorMessage}</div> */}
     </div>
   )
 }
